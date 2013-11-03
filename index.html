@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Calculator</title>
+    <meta charset="utf-8">
+    <script src="../calc.js"></script>
+  </head>
+  <body>
+   <form name="f1">
+      <table border="0" width="90%" align="center">
+          <tr><td width="40%" nowrap><p>Перевести число:</p></td><td>
+            <input type="text" name="number" maxlength="40" size="40" value="">
+          <tr><td width="40%" nowrap><p>Из системы с основанием:</p></td>
+              <td><script type="text/javascript">list('r1',10);</script></td></tr>
+          <tr><td width="40%" nowrap><p>В систему с основанием:</p></td>
+              <td><script type="text/javascript">list('r2',16);</script></td></tr>
+          <tr><td width="40%" nowrap><p>Результат:</p></td><td><p><div id="result"></div></p></td></tr>
+          <tr><td width="40%" nowrap><p>&nbsp;</p></td><td><input type="button" value="Выполнить" onclick="go();"></td></tr>
+      </table>
+  </form>
+ </body>
+</html>
